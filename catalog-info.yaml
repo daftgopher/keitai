@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: keitai
+  description: This is a phone I think 
+  labels:
+    example.com/custom: custom_label_value
+  annotations:
+    example.com/service-discovery: keitai
+    circleci.com/project-slug: github/example-org/artist-website
+  tags:
+    - go
+    - javascript
+    - react
+  links:
+    - url: https://something.com
+      title: Admin Dashboard
+      icon: dashboard
+spec:
+  type: website
+  lifecycle: production
+  owner: artist-relations-team
+  system: public-websites
